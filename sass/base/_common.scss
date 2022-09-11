@@ -1,0 +1,32 @@
+body {
+   height: 100%;
+   font-size: 14px;
+   font-family: "Manrope", sans-serif;
+   letter-spacing: 0.03em;
+   color: var(--brand-color);
+   background-color: var(--basic-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+ul {
+   list-style: none;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+}
+
+a {
+   text-decoration: none;
+}
+img{
+   display: block;
+   max-width: 100%;
+   height: auto;
+}

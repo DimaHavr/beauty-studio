@@ -1,0 +1,35 @@
+.hero {
+   &__box {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 400px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url("../images/header/header-480.jpg");
+      background-color: var(--background);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+
+   &__titel {
+   }
+
+   &__text {
+   }
+
+   &__button {
+   }
+}
+ .hero__box {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 400px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url("../images/header/header-480.jpg");
+      background-color: var(--background);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }

@@ -1,0 +1,40 @@
+.header {
+}
+.page-header__box {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      &_current {
+      }
+   }
+}
+.logo {
+   &__item {
+   }
+}
+.mobile-menu-button {
+}
