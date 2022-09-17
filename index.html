@@ -17,22 +17,61 @@
 
    <!-- Header -->
 
-   <header class="header section-box">
-      <div class="page-header__box ">
-         <div class="nav section-box">
-            <a class="logo" href="./index.html">
-               <span class="logo__item">Beauty Studio</a>
+   <header class="header">
+      <div class="header__box">
+         <div class="header__content">
+            <ul class="header__list">
+               <li class="header__item">
+                  <a class="logo" href="./index.html">
+                     <svg class="header__logo-icon" width="192" height="35">
+                        <use href="./images/symbol-defs.svg#icon-logo-header"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a class="header__link_tel" href="tel:(+22)1234567890">
+                     <svg class="header__icon" width="24" height="25">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                     </svg>
+                     Call Us - (+22) 123 456 7890
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="nav">
             <nav class="nav__box">
                <ul class="nav__list">
-                  <li class="nav__item"><a class="nav__link nav__link_current" href="./index.html">O nas</a></li>
-                  <li class="nav__item"><a class="nav__link" href="./portfolio.html">Usługi</a></li>
-                  <li class="nav__item"><a class="nav__link" href="">Szkolenia</a></li>
-                  <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
-                  <li class="nav__item"><a class="nav__link" href="">Kontakt</a></li>
-                  <li><button class="mobile-menu-button" type="button">Rezerwacja</button></li>
+                  <li class="nav__item"><a class="nav__link nav__link_current" href="./index.html">Home</a></li>
+                  <li class="nav__item"><a class="nav__link" href="./portfolio.html">About</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Pages</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
+                  <li class="nav__item">
+                     <ul class="nav-social-list">
+                        <li class="nav__social-item"><a class="nav__social-link" href="">
+                              <svg class="nav__social-icon" width="18" height="16">
+                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                              </svg>
+                           </a></li>
+                        <li class="nav__social-item"><a class="nav__social-link" href="">
+                              <svg class="nav__social-icon" width="18" height="16">
+                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                              </svg>
+                           </a></li>
+                        <li class="nav__social-item"><a class="nav__social-link" href="">
+                              <svg class="nav__social-icon" width="18" height="16">
+                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                              </svg>
+                           </a></li>
+                     </ul>
+                  </li>
                </ul>
+               <button class="nav__button" type="button"><svg class="nav__button-icon" width="18" height="18">
+                     <use href="./images/symbol-defs.svg#icon-calendar"></use>
+                  </svg><span class="nav__button-text">Reservation</span></button>
+
             </nav>
          </div>
+      </div>
 
    </header>
 
@@ -44,405 +83,500 @@
 
       <section class="hero">
          <div class="hero__box container">
-            <h1 class="hero__titel">Salon kosmetyczny w warszawie</h1>
-            <p class="hero__text">Zapraszamy do naszego pięknego salonu kosmetycznego</p>
-            <button class="hero__button" type="button" data-modal-open>Rezerwacja</button>
+            <p class="hero__text-top">
+               <svg class="hero__button-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-calendar"></use>
+               </svg>Welcome to Beautyness!!!
+            </p>
+            <h1 class="hero__titel">Bring The well being & beauty naturally!!!</h1>
+            <p class="hero__text">Your body does a lot for you, and your caring therapist can help you return the favor
+               in a way that benefits both your
+               physical and mental wellness.</p>
+            <button class="hero__button" type="button">Make a reservation</button>
 
          </div>
-      </section>`
+      </section>
+
+      <!-- Services -->
+
+      <section class="services">
+         <div class="services__box container">
+            <h2 class="services__titel">Services</h2>
+            <ul class="services__list">
+               <li class="services__item">
+                  <div class="services__item-box">
+                     <picture>
+                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                           media="(min-width: 1200px)">
+                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                           media="(min-width: 758px)">
+                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
+                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                     </picture>
+                     <h3 class="services__subtitel">
+                        <svg class="services__icon" width="20" height="20">
+                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        </svg>Spa Massage
+                     </h3>
+                     <p class="services__text">
+                        Your wellness goals and the areas of preference, then unwind with a customized massage
+                        experience.
+                     </p>
+                     <button class="services__btn" type="button">Read more</button>
+                  </div>
+               </li>
+               <li class="services__item">
+                  <div class="services__item-box">
+                     <picture>
+                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                           media="(min-width: 1200px)">
+                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                           media="(min-width: 758px)">
+                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
+                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                     </picture>
+                     <h3 class="services__subtitel">
+                        <svg class="services__icon" width="20" height="20">
+                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        </svg>Hair & Beauty
+                     </h3>
+                     <p class="services__text">
+                        Your wellness goals and the areas of preference, then unwind with a customized massage
+                        experience.
+                     </p>
+                     <button class="services__btn" type="button">Read more</button>
+                  </div>
+               </li>
+               <li class="services__item">
+                  <div class="services__item-box">
+                     <picture>
+                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                           media="(min-width: 1200px)">
+                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                           media="(min-width: 758px)">
+                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
+                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                     </picture>
+                     <h3 class="services__subtitel">
+                        <svg class="services__icon" width="20" height="20">
+                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        </svg>Body Treatments
+                     </h3>
+                     <p class="services__text">
+                        Your wellness goals and the areas of preference, then unwind with a customized massage
+                        experience.
+                     </p>
+                     <button class="services__btn" type="button">Read more</button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
 
       <!-- About -->
 
       <section class="about">
          <div class="about__box container">
-            <h2>Kim jesteśmy</h2>
+            <h2 class="about__titel">Take Your Care</h2>
+            <p class="about__text-top">Elevate Your Lifestyle by Bring Balance and Well Being Into Your Life</p>
+            <p class="about__text">Designed to allow you to unwind and feel confident that you’re in good, caring hands.
+               Our first priority is cleanliness.
+               We have a full-time staff whose job is to ensure that the environment at Beautyness remains.</p>
+            <ul class="about__list">
+               <li class="about__item">
+                  <p><svg class="about__icon" width="49" height="72">
+                        <use href="./images/symbol-defs.svg#icon-experts"></use>
+                     </svg>Beauty Experts</p>
+               </li>
+               <li class="about__item">
+                  <p><svg class="about__icon" width="73" height="74">
+                        <use href="./images/symbol-defs.svg#icon-quality"></use>
+                     </svg>Quality Services</p>
+               </li>
+               <li class="about__item">
+                  <p><svg class="about__icon" width="67" height="69">
+                        <use href="./images/symbol-defs.svg#icon-nature"></use>
+                     </svg>100% Nature</p>
+               </li>
+            </ul>
             <picture>
                <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
                   media="(min-width: 1200px)">
                <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
                   media="(min-width: 758px)">
                <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-               <img class="education__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+               <img class="about__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
             </picture>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit
-               aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
-               sunt nostrud amet.
-
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.
-
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.
-
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.
-
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.
-
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-               enim
-               velit
-               mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <p>RIN BEAUTY STUDIO</p>
          </div>
       </section>
 
-      <!-- Services -->
 
-      <section clas="services">
-         <div class="services__box container">
-            <h2 clas="services__titel">Nasze usługi</h2>
-            <ul clas="services__list">
-               <li clas="services__item">
-                  <div class="services__item-box">
+      <!-- Testimonials -->
+
+      <section class="testimonials">
+         <div class="testimonials__box container">
+            <h2 class="testimonials__titel">Testimonials</h2>
+            <p class="testimonials__text">What our Customers says...</p>
+            <ul class="testimonials__list">
+               <li class="testimonials__item">
+                  <p class="testimonials__item-text">“ Made an appointment with Beautyness and it was the best
+                     experience in a salon I have ever had. They went above and
+                     beyond to make sure I got what I wanted, & patiently explained her process “</p>
+                  <div class="testimonials__item-box">
                      <picture>
                         <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
                            media="(min-width: 1200px)">
                         <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
                            media="(min-width: 758px)">
                         <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img class="testimonials__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко"
+                           width="270">
                      </picture>
-                     <h3 clas="services__subtitel"></h3>
-                     <p clas="services__text"></p>
-                     <button clas="services__btn" type="button"></button>
+                     <svg class="testimonials__icon" width="81" height="17">
+                        <use href="./images/symbol-defs.svg#icon-five-stars"></use>
+                     </svg>
+                     <h3 class="testimonials__subtitel">James Williams</h3>
+                     <p class="testimonials__item-box-text">United States</p>
+                     <svg class="testimonials__decorative-icon" width="71" height="56">
+                        <use href="./images/symbol-defs.svg#icon-decoration"></use>
+                     </svg>
                   </div>
                </li>
-               <li clas="services__item">
-                  <div class="services__item-box">
+               <li class="testimonials__item">
+                  <p class="testimonials__item-text">“ I've been going to Beautyness they are always goes above and
+                     beyond my expectations and leaves my hair looking and
+                     feeling fantastic and looking exactly as I hoped, if not better “</p>
+                  <div class="testimonials__item-box">
                      <picture>
                         <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
                            media="(min-width: 1200px)">
                         <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
                            media="(min-width: 758px)">
                         <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img class="testimonials__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко"
+                           width="270">
                      </picture>
-                     <h3 clas="services__subtitel"></h3>
-                     <p clas="services__text"></p>
-                     <button clas="services__btn" type="button"></button>
-                  </div>
-               </li>
-               <li clas="services__item">
-                  <div class="services__item-box">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                     <h3 clas="services__subtitel"></h3>
-                     <p clas="services__text"></p>
-                     <button clas="services__btn" type="button"></button>
-                  </div>
-               </li>
-               </li>
-            </ul>
-         </div>
-      </section>
-
-      <!-- Our team -->
-
-      <section class="team">
-         <div class="team__box container">
-            <h2 class="team__titel">Nasz zespół</h2>
-            <ul class="team__list">
-               <li class="team__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="team__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <div class="team-list__box">
-                     <h3 class="team__name">Name name</h3>
-                     <p class="team__position">Position</p>
-                     <ul class="team__social-list">
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </li>
-
-               <li class="team__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="team__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <div class="team-list__box">
-                     <h3 class="team__name">Name name</h3>
-                     <p class="team__position">Position</p>
-                     <ul class="team__social-list">
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </li>
-
-               <li class="team__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="team__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <div class="team-list__box">
-                     <h3 class="team__name">Name name</h3>
-                     <p class="team__position">Position</p>
-                     <ul class="team__social-list">
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                        <li class="team__social-item">
-                           <a href="" class="team__social-link">
-                              <svg class="team__social-icon" width="20" height="20">
-                                 <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                              </svg>
-                           </a>
-                        </li>
-                     </ul>
+                     <svg class="testimonials__icon" width="81" height="17">
+                        <use href="./images/symbol-defs.svg#icon-five-stars"></use>
+                     </svg>
+                     <h3 class="testimonials__subtitel">Carolyn James</h3>
+                     <p class="testimonials__item-box-text">United Kingdom</p>
+                     <svg class="testimonials__decorative-icon" width="71" height="56">
+                        <use href="./images/symbol-defs.svg#icon-decoration"></use>
+                     </svg>
                   </div>
                </li>
             </ul>
          </div>
       </section>
 
-      <!-- Courses -->
+      <!-- Benefits -->
 
-      <section class="education">
-         <div class="education__box container">
-            <h2 class="education__titel">Szkolenia</h2>
-            <ul class="education__list">
-               <li class="education__item">
-                  <h3 class="education__subtitel">Szkolenie 1</h3>
+      <section class="benefits">
+         <div class="benefits__box container">
+            <h2 class="benefits__titel">Our awesome benefits</h2>
+            <p class="benefits__text">What you’ll get from Us</p>
+            <ul class="benefits__list">
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">Built with you in mind</h3>
+                  <p class="benefits__item-text">We know how important it is to maintain strong relationships with
+                     clients.</p>
+               </li>
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">The perfect salon services</h3>
+                  <p class="benefits__item-text">Talented, educated, and fashion-forward artists meet the unique needs
+                     of client.</p>
+               </li>
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">Skin deep experiences</h3>
+                  <p class="benefits__item-text">Appropriate for all skin types, sun damage, fine lines and wrinkles,
+                     acne, and oily.</p>
+               </li>
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">Essential spa pedicure</h3>
+                  <p class="benefits__item-text">Indulge in a soothing foot bath along with a callous smoothing
+                     exfoliating scrub.</p>
+               </li>
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">Skilled spa services</h3>
+                  <p class="benefits__item-text">Our skilled estheticians offer an array of refreshing treatments.</p>
+               </li>
+               <li class="benefits__item">
+                  <svg class="benefits__icon" width="32" height="23">
+                     <use href="./images/symbol-defs.svg#icon-check-mark"></use>
+                  </svg>
+                  <h3 class="benefits__subtitel">Perfect & Natural Products</h3>
+                  <p class="benefits__item-text">We offer the very best in luxury beauty products for both hair and
+                     skin.</p>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!-- Discount -->
+
+      <section class="discount">
+         <div class="discount__box container">
+            <h2 class="discount__titel">Flat Discount</h2>
+            <p class="discount__quote">Claim upto 50% offer on the most popular services...</p>
+            <p class="discount__text">Our Retreat is not meant to be an occasional treat, but rather a part of your
+               routine that restores balance to your
+               daily life.</p>
+            <ul class="discount__list">
+               <li class="discount__item">
+                  <p class="discount__item-text"></p>
+               </li>
+               <li class="discount__item">
+                  <p class="discount__item-text"></p>
+               </li>
+            </ul>
+            <div class="discount__aside">
+               <p class="discount__aside-text">Get flat<span class="discount__aside-copy">50%</span>discount</p>
+            </div>
+
+            <!-- Didcound Modal -->
+
+            <!-- <div class="discount-modal__box">
+               <button type="button" class="discount-modal__close-button" data-modal-close>
+                  <svg class="discount-modal__close-button-icon" width="18" height="18">
+                     <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                  </svg>
+               </button>
+               <p class="discount-modal__area-text">Залиште свої дані, ми вам передзвонимо</p>
+               <form class="discount-modal">
+                  <label class="discount-modal__box" for="user-name">
+                     <span class="discount-modal__text">Ім'я</span>
+                     <span class="discount-modal__input-box">
+                        <input class="discount-modal__input" id="user-name" name="user-name" type="text" minlength="3"
+                           required>
+                        <span class="discount-modal__icon-box">
+                           <svg class="discount-modal__icon" width="18" height="18">
+                              <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                           </svg>
+                        </span>
+                     </span>
+                  </label>
+                  <label class="discount-modal__box" for="user-tel">
+                     <span class="discount-modal__text">Телефон</span>
+                     <span class="discount-modal__input-box">
+                        <input class="discount-modal__input" id="user-tel" name="user-tel" type="tel" minlength="3"
+                           required>
+                        <span class="discount-modal__icon-box">
+                           <svg class="discount-modal__icon" width="18" height="18">
+                              <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                           </svg>
+                        </span>
+                     </span>
+                  </label>
+                  <label class="discount-modal__box" for="user-email">
+                     <span class="discount-modal__text">Пошта</span>
+                     <span class="discount-modal__input-box">
+                        <input class="discount-modal__input" id="user-email" name="user-email" type="email"
+                           minlength="3" required>
+                        <span class="discount-modal__icon-box">
+                           <svg class="discount-modal__icon" width="18" height="18">
+                              <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                           </svg>
+                        </span>
+                     </span>
+                  </label>
+                  <label class="discount-modal__messege-box" for="user-messege">
+                     <span class="discount-modal__text">Коментар</span>
+                     <textarea class="discount-modal__messege" id="user-messege" name="messege"
+                        placeholder="Введіть текст"></textarea>
+                  </label>
+                  <input class="discount-modal__check visually-hidden" id="user-policy" name="user-policy"
+                     type="checkbox">
+                  <label class="discount-modal__check-box" for="user-policy">
+                     <span class="discount-modal__check-text">Погоджуюся з розсилкою та приймаю&nbsp;<a
+                           class="discount-modal__check-link" href="">Умови договору</a>
+                     </span>
+                  </label>
+                  <button class="discount-modal__submit-button" type="submit">Відправити</button>
+               </form>
+            </div> -->
+
+         </div>
+      </section>
+
+      <!-- Blog -->
+
+      <section class="blog">
+         <div class="blog container">
+            <h2 class="blog__titel">Our blog</h2>
+            <p class="blog__text">Latest updates</p>
+            <ul class="blog__list">
+               <li class="blog__item">
                   <picture>
                      <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
                         media="(min-width: 1200px)">
                      <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
                         media="(min-width: 758px)">
                      <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="education__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
                   </picture>
-                  <p class="education__text">About About </p>
-                  About
-                  About
-                  About
-                  About
-                  About
-                  About
-                  <button class="education__btn"><a class="education__link" href=""></a>Info</button>
+                  <p class="blog__item-text">How to make the make-up stay last</p>
+                  <p class="blog__item-desc">Therapeutic aromatherapy can help bring balance both mentally, physically,
+                     and
+                     different blends.</p>
                </li>
-               <li class="education__item">
-                  <h3 class="education__subtitel">Szkolenie 2</h3>
+               <li class="blog__item">
                   <picture>
                      <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
                         media="(min-width: 1200px)">
                      <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
                         media="(min-width: 758px)">
                      <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="education__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
                   </picture>
-                  <p class="education__text">About About </p>
-                  About
-                  About
-                  About
-                  About
-                  About
-                  About
-                  <button class="education__btn"><a class="education__link" href=""></a>Info</button>
+                  <p class="blog__item-text">Tips to improve your body via cleansing</p>
+                  <p class="blog__item-desc">Whether you’re looking to stress, boost energy, improve sleep, clear
+                     sinuses, or
+                     relieve a headache.</p>
+               </li>
+               <li class="blog__item">
+                  <picture>
+                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                        media="(min-width: 758px)">
+                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
+                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                  </picture>
+                  <p class="blog__item-text">Experience the beauty at our beauty spa</p>
+                  <p class="blog__item-desc">We’ve created a range of proprietary aromatherapy blends to enhance your
+                     massage or
+                     skin therapy.</p>
                </li>
             </ul>
-
+            <button class="blog__btn" type="button">View more stories
+               <svg class="benefits__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+               </svg>
+            </button>
          </div>
       </section>
-
-      <!-- Portfolio -->
-
-      <section class="portfolio">
-         <div class="portfolio__box container">
-            <h2 class="portfolio__titel">Galeria</h2>
-            <p class="portfolio__text">Sprawdź nasze przykładowe prace</p>
-            <ul class="portfolio__list">
-               <li class="portfolio__item"><a class="portfolio__link" href="">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="portfolio__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                  </a></li>
-               <li class="portfolio__item"><a class="portfolio__link" href="">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="portfolio__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                  </a></li>
-               <li class="portfolio__item"><a class="portfolio__link" href="">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="portfolio__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                  </a></li>
-               <li class="portfolio__item"><a class="portfolio__link" href="">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="portfolio__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                  </a></li>
-               <li class="portfolio__item"><a class="portfolio__link" href="">
-                     <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                           media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                           media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="portfolio__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                     </picture>
-                  </a></li>
-            </ul>
-            <button type="button" class="portfolio__btn"></button>
-         </div>
-      </section>
-
    </main>
 
    <!-- Footer -->
 
    <footer class="footer">
-      <div class="footer__box">
-         <div class="footer__address-box">
-            <address class="address">
-               <a class="footer__logo" href="./index.html">Beauty-Studio</a>
-               <ul class="address__list">
-                  <li class="footer__item"><a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                        target="_blank" rel="noopener noreferrer nofollow">Warszawa</a></li>
-                  <li class="footer__item"><a class="footer__link" href="mailto:info@example.com">info@example.com</a>
-                  </li>
-                  <li class="footer__item"><a class="footer__link" href="tel:+380991111111">+48 099 111 11 11</a></li>
-               </ul>
-            </address>
+      <div class="footer__box container">
 
-            <div class="footer-social__box">
-               <p class="footer-social__text">Subscribe</p>
-               <ul class="footer-social__list">
-                  <li class="footer-social__item">
-                     <a href="" class="footer-social__link">
-                        <svg class="footer-social__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="footer-social__item">
-                     <a href="" class="footer-social__link">
-                        <svg class="footer-social__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="footer-social__item">
-                     <a href="" class="footer-social__link">
-                        <svg class="footer-social__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="footer-social__item">
-                     <a href="" class="footer-social__link">
-                        <svg class="footer-social__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+         <div class="footer-social__box">
+            <a class="logo" href="./index.html">
+               <svg class="nav__icon" width="298" height="65">
+                  <use href="./images/symbol-defs.svg#icon-logo-footer"></use>
+               </svg></a>
+            <ul class="footer-social__list">
+               <li class="footer-social__item">
+                  <a href="" class="footer-social__link">
+                     <svg class="footer-social__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a href="" class="footer-social__link">
+                     <svg class="footer-social__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a href="" class="footer-social__link">
+                     <svg class="footer-social__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a href="" class="footer-social__link">
+                     <svg class="footer-social__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
          </div>
-         <div class="footer-form__box">
+         <div class="footer-nav__box">
+            <ul class="footer-nav__list">
+               <li class="footer-nav__item">
+                  <h2 class="footer-nav__titel">Explore</h2>
+                  <ul class="footer-nav___item-list">
+                     <li><a class="footer-nav__link" href="">Home</a></li>
+                     <li><a class="footer-nav__link" href="">About Us</a></li>
+                     <li><a class="footer-nav__link" href="">Services</a></li>
+                     <li><a class="footer-nav__link" href="">Articles</a></li>
+                     <li><a class="footer-nav__link" href="">Contact Us</a></li>
+                  </ul>
+               </li>
+               <li class="footer-nav__item">
+                  <h2 class="footer-nav__titel">Utility Pages</h2>
+                  <ul class="footer-nav__item-list">
+                     <li><a class="footer-nav__link" href="">Style Guide</a></li>
+                     <li><a class="footer-nav__link" href="">404 Not Found</a></li>
+                     <li><a class="footer-nav__link" href="">Password Protected</a></li>
+                     <li><a class="footer-nav__link" href="">Licenses</a></li>
+                     <li><a class="footer-nav__link" href="">Changelog</a></li>
+                  </ul>
+               </li>
+               <li class="footer-nav__item">
+                  <h2 class="footer-nav__titel">Keep in Touch</h2>
+                  <address class="footer-address">
+                     <ul class="footer-address-list">
+                        <li class="footer-address__item">
+                           <p class="footer-address__text">Address :</p>
+                           <a class="footer-address__link" href="https://goo.gl/maps/8WSkJpdCfATnPq687">24A Kingston St,
+                              Los Vegas NC 28202, USA.</a>
+                        </li>
+                        <li class="footer-address__item">
+                           <p class="footer-address__text">Mail:</p>
+                           <a class="footer-address__link" href="mailto:support@doctors.com">support@doctors.com</a>
+                        </li>
+                        <li class="footer-address__item">
+                           <p class="footer-address__text">Phone:</p>
+                           <a class="footer-address__link" href="tel:(+22)1234567900"></a>(+22) 123 - 4567 - 900
+                        </li>
+                     </ul>
+                  </address>
+               </li>
+               <li class="footer-navbox__item">
+                  <h2 class="footer-nav__titel">Working Hours</h2>
+                  <div class="footer-shedule__box">
+                     <ul class="footer-shedule__list">
+                        <li class="footer-shedule__item">
+                           <p class="footer-shedule__text">Mon to Fri: 7am - 6pm</p>
+                        </li>
+                        <li class="footer-shedule__item">
+                           <p class="footer-shedule__text">Sat: 9am - 7pm</p>
+                        </li>
+                        <li class="footer-shedule__item">
+                           <p class="footer-shedule__text">Sun: 9am - 6pm</p>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- <div class="footer-form__box">
             <p class="footer-form__text">Follow us</p>
             <form class="footer-form">
                <label class="footer-form__label" for="user-email-subscribe">
@@ -455,9 +589,7 @@
                   </svg>
                </button>
             </form>
-         </div>
-      </div>
-
+         </div> -->
    </footer>
 
 </body>
