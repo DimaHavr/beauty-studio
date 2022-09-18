@@ -276,6 +276,7 @@ img {
 .about__titel {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .about__text-top {
@@ -370,6 +371,96 @@ img {
   cursor: pointer;
   border-radius: 20px;
   transform: scale(1.2);
+}
+
+.testimonials {
+  background-color: var(--background);
+}
+
+.testimonials__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.testimonials__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.testimonials__text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: 0.45px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.testimonials__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.testimonials__item-text {
+  padding-left: 30px;
+  font-size: 19px;
+  line-height: 32px;
+  /* or 170% */
+  color: #141414;
+  width: 523px;
+}
+
+.testimonials__item-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonials__content {
+  display: flex;
+  padding-left: 30px;
+}
+
+.testimonials__content-box {
+  display: flex;
+}
+
+.testimonials__content-employee {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__img-box {
+  display: flex;
+}
+
+.pricelist__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 220px;
+  padding-bottom: 220px;
+}
+
+.pricelist__text {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: 0.45px;
+  color: var(--brand-color);
+  width: 580px;
+  height: 117px;
+  margin-top: 10px;
 }
 
 .header {
