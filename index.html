@@ -83,17 +83,27 @@
 
       <section class="hero">
          <div class="hero__box container">
-            <p class="hero__text-top">
-               <svg class="hero__button-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-calendar"></use>
-               </svg>Welcome to Beautyness!!!
-            </p>
-            <h1 class="hero__titel">Bring The well being & beauty naturally!!!</h1>
-            <p class="hero__text">Your body does a lot for you, and your caring therapist can help you return the favor
-               in a way that benefits both your
-               physical and mental wellness.</p>
-            <button class="hero__button" type="button">Make a reservation</button>
-
+            <div class="hero__content">
+               <p class="hero__text-top titel">
+                  <svg class="hero__icon" width="24" height="24">
+                     <use href="./images/symbol-defs.svg#icon-star"></use>
+                  </svg>Welcome to beautyness!!!
+               </p>
+               <h1 class="hero__titel">Bring The well being & beauty naturally!!!</h1>
+               <p class="hero__text">Your body does a lot for you, and your caring therapist can help you return the
+                  favor
+                  in a way that benefits both your
+                  physical and mental wellness.</p>
+               <button class="hero__button" type="button">Make a reservation</button>
+            </div>
+            <div class="hero__img-box">
+               <picture>
+                  <source srcset="./images/hero/hero.jpg 1x, ./images/hero/hero2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/hero/hero.jpg 1x, ./images/hero/hero2x.jpg 2x" media="(min-width: 758px)">
+                  <source srcset="./images/hero/hero.jpg 1x, ./images/hero/hero2x.jpg 2x">
+                  <img class="hero__img" src="./images/hero/hero.jpg" alt="women with flowers" width="550">
+               </picture>
+            </div>
          </div>
       </section>
 
@@ -101,22 +111,24 @@
 
       <section class="services">
          <div class="services__box container">
-            <h2 class="services__titel">Services</h2>
+            <h2 class="services__titel visually-hidden">Services</h2>
             <ul class="services__list">
                <li class="services__item">
                   <div class="services__item-box">
                      <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/massage.jpg 1x, ./images/team/img./images/services/massage2x.jpg 2x"
                            media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/massage.jpg 1x, ./images/team/img./images/services/massage2x.jpg 2x"
                            media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                        <source
+                           srcset="./images/services/massage.jpg 1x, ./images/team/img./images/services/massage2x.jpg 2x">
+                        <img class="services__img" src="./images/services/massage.jpg" alt="Spa & massage for women"
+                           width="380">
                      </picture>
                      <h3 class="services__subtitel">
-                        <svg class="services__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                        </svg>Spa Massage
+                        Spa & Massage
                      </h3>
                      <p class="services__text">
                         Your wellness goals and the areas of preference, then unwind with a customized massage
@@ -128,17 +140,19 @@
                <li class="services__item">
                   <div class="services__item-box">
                      <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/treatments.jpg 1x, ./images/team/img./images/services/treatments2x.jpg 2x"
                            media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/treatments.jpg 1x, ./images/team/img./images/services/treatments2x.jpg 2x"
                            media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                        <source
+                           srcset="./images/services/treatments.jpg 1x, ./images/team/img./images/services/treatments2x.jpg 2x">
+                        <img class="services__img" src="./images/services/treatments.jpg" alt="Feet i water"
+                           width="380">
                      </picture>
                      <h3 class="services__subtitel">
-                        <svg class="services__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                        </svg>Hair & Beauty
+                        Body Treatments
                      </h3>
                      <p class="services__text">
                         Your wellness goals and the areas of preference, then unwind with a customized massage
@@ -150,23 +164,25 @@
                <li class="services__item">
                   <div class="services__item-box">
                      <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/beauty.jpg 1x, ./images/team/img./images/services/beauty2x.jpg 2x"
                            media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                        <source
+                           srcset="./images/services/beauty.jpg 1x, ./images/team/img./images/services/beauty2x.jpg 2x"
                            media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="services__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
+                        <source
+                           srcset="./images/services/beauty.jpg 1x, ./images/team/img./images/services/beauty2x.jpg 2x">
+                        <img class="services__img" src="./images/services/beauty.jpg" alt="Women hair" width="380">
                      </picture>
                      <h3 class="services__subtitel">
-                        <svg class="services__icon" width="20" height="20">
-                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                        </svg>Body Treatments
+                        Hair & Beauty
                      </h3>
                      <p class="services__text">
                         Your wellness goals and the areas of preference, then unwind with a customized massage
                         experience.
                      </p>
-                     <button class="services__btn" type="button">Read more</button>
+                     <button class="services__btn" type="button"><span class="services__btn-text">Read
+                           more</span></button>
                   </div>
                </li>
             </ul>
@@ -178,36 +194,44 @@
 
       <section class="about">
          <div class="about__box container">
-            <h2 class="about__titel">Take Your Care</h2>
-            <p class="about__text-top">Elevate Your Lifestyle by Bring Balance and Well Being Into Your Life</p>
-            <p class="about__text">Designed to allow you to unwind and feel confident that you’re in good, caring hands.
-               Our first priority is cleanliness.
-               We have a full-time staff whose job is to ensure that the environment at Beautyness remains.</p>
-            <ul class="about__list">
-               <li class="about__item">
-                  <p><svg class="about__icon" width="49" height="72">
+            <div class="about__content">
+               <h2 class="about__titel titel">Take Your Care</h2>
+               <p class="about__text-top">Elevate Your Lifestyle by Bring Balance and Well Being Into Your Life</p>
+               <p class="about__text">Designed to allow you to unwind and feel confident that you’re in good, caring
+                  hands.
+                  Our first priority is cleanliness.
+                  We have a full-time staff whose job is to ensure that the environment at Beautyness remains.</p>
+               <ul class="about__list">
+                  <li class="about__item">
+                     <svg class="about__icon" width="49" height="72">
                         <use href="./images/symbol-defs.svg#icon-experts"></use>
-                     </svg>Beauty Experts</p>
-               </li>
-               <li class="about__item">
-                  <p><svg class="about__icon" width="73" height="74">
+                     </svg>
+                     <p class="about__item-text">Beauty Experts</p>
+                  </li>
+                  <li class="about__item">
+                     <svg class="about__icon" width="73" height="74">
                         <use href="./images/symbol-defs.svg#icon-quality"></use>
-                     </svg>Quality Services</p>
-               </li>
-               <li class="about__item">
-                  <p><svg class="about__icon" width="67" height="69">
+                     </svg>
+                     <p class="about__item-text">Quality Services</p>
+                  </li>
+                  <li class="about__item">
+                     <svg class="about__icon" width="67" height="69">
                         <use href="./images/symbol-defs.svg#icon-nature"></use>
-                     </svg>100% Nature</p>
-               </li>
-            </ul>
-            <picture>
-               <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                  media="(min-width: 1200px)">
-               <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                  media="(min-width: 758px)">
-               <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-               <img class="about__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-            </picture>
+                     </svg>
+                     <p class="about__item-text">100% Nature</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="about__img-box">
+               <picture>
+                  <source srcset="./images/about/women.jpg 1x, ./images/about/women2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/about/women.jpg 1x, ./images/about/women2x.jpg 2x" media="(min-width: 758px)">
+                  <source srcset="./images/about/women.jpg 1x, ./images/about/women2x.jpg 2x">
+                  <img class="about__img" src="./images/about/women.jpg" alt="Women in beuty salon" width="500">
+               </picture>
+
+            </div>
+            
          </div>
       </section>
 
@@ -225,13 +249,16 @@
                      beyond to make sure I got what I wanted, & patiently explained her process “</p>
                   <div class="testimonials__item-box">
                      <picture>
-                        <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
+                        <source
+                           srcset="./images/team/./images/services/massage 1x, ./images/team/img./images/services/massage2x 2x"
                            media="(min-width: 1200px)">
-                        <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
+                        <source
+                           srcset="./images/team/./images/services/massage 1x, ./images/team/img./images/services/massage2x 2x"
                            media="(min-width: 758px)">
-                        <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                        <img class="testimonials__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко"
-                           width="270">
+                        <source
+                           srcset="./images/services/massage.jpg 1x, ./images/team/img./images/services/massage2x 2x">
+                        <img class="testimonials__img" src="./images/services/massage" alt="Spa & massage for women"
+                           width="380">
                      </picture>
                      <svg class="testimonials__icon" width="81" height="17">
                         <use href="./images/symbol-defs.svg#icon-five-stars"></use>

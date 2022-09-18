@@ -1,5 +1,6 @@
    @import './utils/variables';
    @import './base/common.scss';
+   @import './base/titel.scss';
    @import './base/container.scss';
    @import './components/header.scss';
    @import './components/about.scss';
@@ -9,3 +10,5 @@
    @import './components/portfolio.scss';
    @import './components/footer';
    @import './components/header';
+   @import './components/hero';
+   @import './utils/visually-hidden';
