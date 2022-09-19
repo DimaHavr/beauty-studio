@@ -27,37 +27,66 @@
 .testimonials__list {
    display: flex;
    justify-content: space-between;
-   gap: 10px;
+   gap: 20px;
 }
 
 .testimonials__item {
+   width: 600px;
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+      transform: scale(1.2) translate(-50px, 0px);
+   }
+   &:last-child:hover {
+      transform: scale(1.2) translate(50px, 0px);
+   }
 }
 .testimonials__item-text {
-   padding-left: 30px;
    font-size: 19px;
    line-height: 32px;
-   /* or 170% */
-
-   color: #141414;
-   width: 523px;
+   color: var(--brand-color);
+   background-color: var(--basic-color);
+   padding: 33px 47px 25px 30px;
 }
 .testimonials__item-box {
    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   
+   justify-content: space-between;
+   flex-wrap: wrap;
+   background-color: #1e2c30;
+   padding: 22px 30px;
+   padding-top: 22px;
+   padding-bottom: 22px;
 }
 .testimonials__content {
    display: flex;
    padding-left: 30px;
 }
-.testimonials__content-box{
+.testimonials__content-box {
    display: flex;
 }
-.testimonials__content-employee{
+.testimonials__content-employee {
    display: flex;
+   justify-content: center;
    flex-direction: column;
+   gap: 5px;
+   margin-left: 20px;
 }
-.testimonials__img-box {
+.testimonials__name-employee {
+   font-family: "Playfair Display";
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.24px;
+   color: var(--basic-color);
+}
+.testimonials__text-employee {
+   font-size: 14px;
+   line-height: 1.5;
+   letter-spacing: 0.42px;
+   color: var(--basic-color);
+}
+
+.testimonials__img {
    display: flex;
+   border: 2px solid var(--basic-color);
 }
