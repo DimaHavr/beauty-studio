@@ -514,6 +514,117 @@ img {
   margin-top: 10px;
 }
 
+.footer {
+  background-color: #1e2c30;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__social-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--hover-color);
+  width: 55px;
+  height: 55px;
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  cursor: pointer;
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+.footer__social-link:hover .footer__social-icon, .footer__social-link:focus .footer__social-icon {
+  transform: scale(1.2);
+}
+
+.footer__social-icon {
+  fill: var(--basic-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.footer__nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__nav-link-list, .footer__shedule-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav-titel {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: 0.352px;
+  color: var(--basic-color);
+}
+
+.footer__nav-link,
+.footer__address-link {
+  display: block;
+  font-style: normal;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.17px;
+  color: var(--basic-color);
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__nav-link:hover, .footer__nav-link:focus,
+.footer__address-link:hover,
+.footer__address-link:focus {
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+.footer__address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__address-item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer__address-text, .footer__shedule-text {
+  font-size: 17px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.17px;
+  color: var(--basic-color);
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -845,10 +956,6 @@ img {
   color: var(--brand-color);
   padding-left: 35px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.discount__item-link:hover, .discount__item-link:focus {
-  color: var(--hover-color);
-  transform: scale(1.2);
 }
 .discount__item-link:hover, .discount__item-link:focus {
   color: var(--hover-color);
