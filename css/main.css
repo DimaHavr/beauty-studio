@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --brand-color: #141414;
   --second-color: #555555;
@@ -125,7 +126,7 @@ img {
   color: inherit;
   font-size: 16px;
   line-height: 1.5;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier 250ms 0.4, 0, 0.2, 1;
 }
 .header__link_tel:hover, .header__link_tel:focus {
   color: var(--hover-color);
@@ -133,6 +134,9 @@ img {
 .header__link_tel:hover, .header__link_tel:focus .header__icon {
   animation: shake 0.6s;
   animation-iteration-count: infinite;
+}
+.header__link_tel .hero__icon {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @keyframes shake {
   0% {
@@ -185,7 +189,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__social-link:hover .nav__social-icon, .nav__social-link:focus .nav__social-icon {
-  transform: scale(1.2);
+  transform: scale(1.4);
+}
+
+.nav__social-icon {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__button {
@@ -563,7 +571,7 @@ img {
   color: inherit;
   font-size: 16px;
   line-height: 1.5;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier 250ms 0.4, 0, 0.2, 1;
 }
 .header__link_tel:hover, .header__link_tel:focus {
   color: var(--hover-color);
@@ -571,6 +579,9 @@ img {
 .header__link_tel:hover, .header__link_tel:focus .header__icon {
   animation: shake 0.6s;
   animation-iteration-count: infinite;
+}
+.header__link_tel .hero__icon {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @keyframes shake {
   0% {
@@ -623,7 +634,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__social-link:hover .nav__social-icon, .nav__social-link:focus .nav__social-icon {
-  transform: scale(1.2);
+  transform: scale(1.4);
+}
+
+.nav__social-icon {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__button {
@@ -755,6 +770,196 @@ img {
 }
 .hero__img:hover {
   transform: scale(1.1);
+}
+
+.discount {
+  background-color: var(--background);
+}
+
+.discount__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  max-width: 1200px;
+}
+
+.discount__quote {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.28;
+  text-align: left;
+  letter-spacing: 0.45px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  max-width: 445px;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.discount__text {
+  font-size: 18px;
+  line-height: 1.72;
+  color: var(--second-color);
+  max-width: 541px;
+  margin-bottom: 20px;
+}
+
+.discount__content {
+  display: flex;
+}
+
+.discount__list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--basic-color);
+  border-top: 3px solid var(--hover-color);
+  border-bottom: 3px solid var(--hover-color);
+  border-left: 3px solid var(--hover-color);
+  padding: 32px 33px;
+  row-gap: 15px;
+}
+
+.discount__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.discount__item-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.discount__item-link {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: var(--brand-color);
+  padding-left: 35px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.discount__item-link:hover, .discount__item-link:focus {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+.discount__item-link:hover, .discount__item-link:focus {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+.discound__aside-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2c30;
+  padding: 22px 25px 29px 25px;
+}
+
+.discound__aside-text {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--basic-color);
+}
+
+.discound__aside-item:first-child .discound__aside-text::before,
+.discound__aside-item:first-child .discound__aside-text::after {
+  content: " − ";
+}
+
+.discound__aside-item:nth-child(2) .discound__aside-text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 78px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  letter-spacing: 0.78px;
+  color: #ffffff;
+}
+
+.benefits__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+
+.benefits__text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: 0.45px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 50px;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 373px;
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.benefits__item:hover .benefits__icon-box {
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+.benefits__item:hover .benefits__icon {
+  transform: scale(1.2);
+}
+
+.benefits__subtitel {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.312px;
+  color: var(--brand-color);
+  margin-top: 15px;
+}
+
+.benefits__item-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+.benefits__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 26px;
+  background-color: var(--hover-color);
+  outline: 5px double var(--hover-color);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits__icon {
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {

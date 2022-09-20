@@ -57,7 +57,7 @@
    color: inherit;
    font-size: 16px;
    line-height: 1.5;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier(0.4, 0, 0.2, 1) ;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), animation cubic-bezier 250ms (0.4, 0, 0.2, 1) ;
    &:hover,
    &:focus {
       color: var(--hover-color);
@@ -66,6 +66,9 @@
    &:focus .header__icon {
       animation: shake 0.6s;
       animation-iteration-count: infinite;
+   }
+   .hero__icon{
+      transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    @keyframes shake {
@@ -118,10 +121,12 @@
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:hover .nav__social-icon,
    &:focus .nav__social-icon {
-      transform: scale(1.2);
+      transform: scale(1.4);
    }
 }
-
+.nav__social-icon{
+   transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .nav__button {
    display: flex;
    justify-content: center;
