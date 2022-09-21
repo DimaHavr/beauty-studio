@@ -11,8 +11,12 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 595px;
+
    margin-top: 50px;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover{
+      transform: scale(1.1);
+   }
 }
 .blog__button {
    justify-content: center;
