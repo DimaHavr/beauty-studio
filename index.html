@@ -502,63 +502,47 @@
 
       <!-- Blog -->
 
-      <!-- <section class="blog">
-         <div class="blog container">
+      <section>
+         <div class="blog__box container">
             <h2 class="blog__titel">Our blog</h2>
             <p class="blog__text">Latest updates</p>
-            <ul class="blog__list">
-               <li class="blog__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <p class="blog__item-text">How to make the make-up stay last</p>
-                  <p class="blog__item-desc">Therapeutic aromatherapy can help bring balance both mentally, physically,
-                     and
-                     different blends.</p>
-               </li>
-               <li class="blog__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <p class="blog__item-text">Tips to improve your body via cleansing</p>
-                  <p class="blog__item-desc">Whether you’re looking to stress, boost energy, improve sleep, clear
-                     sinuses, or
-                     relieve a headache.</p>
-               </li>
-               <li class="blog__item">
-                  <picture>
-                     <source srcset="./images/team/img-t-270.jpg 1x, ./images/team/img-t-270-2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                     <source srcset="./images/team/img-t-354.jpg 1x, ./images/team/img-t-354-2x.jpg 2x"
-                        media="(min-width: 758px)">
-                     <source srcset="./images/team/img-t-450.jpg 1x, ./images/team/img-t-450-2x.jpg 2x">
-                     <img class="blog__img" src="./images/team/img-t-450.jpg" alt="Ігор Дем'яненко" width="270">
-                  </picture>
-                  <p class="blog__item-text">Experience the beauty at our beauty spa</p>
-                  <p class="blog__item-desc">We’ve created a range of proprietary aromatherapy blends to enhance your
-                     massage or
-                     skin therapy.</p>
-               </li>
-            </ul>
-            <button class="blog__btn" type="button">View more stories
-               <svg class="benefits__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-               </svg>
-            </button>
-         </div>
-      </section> -->
+            <div class="blog__content">
+               <img class="blog__img" src="./images/blog/iphone.webp" alt="" width="363">
+               <div class="blog__video" id='media-player'>
+                  <video width="320" height="800" id='media-video' muted>
+                     <source src='./video/nature.mp4' type='video/mp4'>
+                  </video>
+                  <div class="blog__play-box" id='media-controls'>
+                     <button class="blog__play-btn" id='play-pause-button' style="
+                       display: block;
+                       width: 320px;
+                       height: 423px;
+                       opacity: 0;
+                       cursor: pointer;
+                     " title='play' onclick='togglePlayPause();'>Play</button>
+                  </div>
+               </div>
+            </div>
 
-      <!-- Video -->
+            <!-- Player -->
+            <!-- <div class="blog__button">
+               <div>
+                  <p id="out">0</p>
+               </div>
+               <button id="play">Play</button>
+               <button id="pause">Pause</button>
+               <button id="stop">Stop</button>
+               <button id="speed-up">Швидше</button>
+               <button id="speed-down">Повільніше</button>
+               <button id="speed-normal">Нормально</button>
+               <label for="#volume">Звук</label>
+               <input type="range" id="volume" min="0" max="100">
+               <div>
+                  <progress id="progress" max="100" value="0" style="width:50%; height: 25px;"></progress>
+               </div> -->
+         </div>
+         </div>
+      </section>
 
    </main>
 
@@ -631,7 +615,8 @@
                      <ul class="footer__address-list">
                         <li class="footer__address-item">
                            <p class="footer__address-text">Address :</p>
-                           <a class="footer__address-link" href="https://goo.gl/maps/8WSkJpdCfATnPq687">24A Kingston St, Los Vegas<br>NC 28202, USA.</a>
+                           <a class="footer__address-link" href="https://goo.gl/maps/8WSkJpdCfATnPq687">24A Kingston St,
+                              Los Vegas<br>NC 28202, USA.</a>
                         </li>
                         <li class="footer__address-item">
                            <p class="footer__address-text">Mail:</p>

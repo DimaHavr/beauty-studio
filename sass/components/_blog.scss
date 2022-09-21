@@ -1,0 +1,45 @@
+.blog__box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.blog__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 595px;
+   margin-top: 50px;
+}
+.blog__button {
+   justify-content: center;
+}
+.blog__img {
+   display: inline-block;
+   position: relative;
+   z-index: 100;
+   overflow: hidden;
+}
+.blog__video {
+   position: absolute;
+   display: block;
+}
+
+.blog__play-box {
+   position: absolute;
+   z-index: 1001;
+   top: 189px;
+   left: 0;
+   opacity: 0;
+   overflow: hidden;
+   cursor: pointer;
+}
+.blog__play-btn  {
+   display: block;
+   width: 320px;
+   height: 423px;
+   opacity: 0;
+}
