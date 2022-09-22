@@ -506,12 +506,19 @@
          <div class="blog__box container">
             <h2 class="blog__titel">Our blog</h2>
             <p class="blog__text">Latest updates</p>
+            <div>
+
+            </div>
             <div class="blog__content">
                <img class="blog__img" src="./images/blog/iphone.webp" alt="" width="363">
                <div class="blog__video" id='media-player'>
-                  <video width="320" height="800" id='media-video' muted>
+                  <video width="320" height="425" id='media-video'>
                      <source src='./video/nature.mp4' type='video/mp4'>
                   </video>
+                  <div class="blog__volume-box">
+                     <input class="styled-slider slider-progress" type="range" min="0" max="100" value="100" step="1" oninput="audio.volume = this.value/100"
+                        onchange="this.oninput()">
+                  </div>
                   <div class="blog__play-box" id='media-controls'>
                      <button class="blog__play-btn" id='play-pause-button' style="
                        display: block;
@@ -520,6 +527,16 @@
                        opacity: 0;
                        cursor: pointer;
                      " title='play' onclick='togglePlayPause();'>Play</button>
+                  </div>
+                  <div class="insta">
+                     <div class="social__icon instagram">
+                        <div class="tooltip">Instagram</div>
+                        <span>
+                           <svg class="fab fa-instagram" width="35" height="35">
+                              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                           </svg>
+                           <i ></i></span>
+                     </div>
                   </div>
                </div>
             </div>
