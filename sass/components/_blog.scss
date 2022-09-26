@@ -6,22 +6,61 @@
    padding-top: 50px;
    padding-bottom: 50px;
 }
-.blog__content {
+.blog__text {
+   font-family: "Playfair Display";
+   font-weight: 400;
+   font-size: 45px;
+   line-height: 1.28;
+   text-align: left;
+   letter-spacing: 0.45px;
+   margin-top: 10px;
+}
+.blog__content-list {
    display: flex;
-   flex-direction: column;
+   gap: 30px;
+}
+
+.blog__content-item {
+   position: relative;
+   display: flex;
    justify-content: center;
    align-items: center;
-
    margin-top: 50px;
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:hover {
       transform: scale(1.1);
    }
+   &:hover .blog__follow {
+      transform: translate(55px, 0px);
+      opacity: 1;
+   }
+   &:hover:nth-child(2) .blog__follow {
+      transform: translate(100px, 0px);
+      opacity: 1;
+   }
 }
+
+.blog__content-item:nth-child(2) .blog__follow {
+   position: absolute;
+   top: 60px;
+   left: 0;
+   opacity: 0;
+   z-index: 5;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog__img-box {
+   display: block;
+   position: absolute;
+   z-index: 0;
+   top: 90px;
+   left: 0px;
+}
+
 .blog__button {
    justify-content: center;
 }
-.blog__img {
+.blog__img-border {
    display: inline-block;
    position: sticky;
    z-index: 1;
@@ -48,56 +87,35 @@
    opacity: 0;
 }
 
-.insta {
-   display: block;
+// insta
+
+.blog__follow {
    position: absolute;
-   z-index: 3;
-   top: 360px;
-   left: 118px;
-   cursor: pointer;
-   .social__icon {
-      position: relative;
-      padding: 13px;
-      margin: 10px;
-      font-size: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover {
-         color: var(--brand-color);
-         transform: scale(1.2);
-
-         .tooltip {
-            top: -25px;
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-            color: var(--brand-color);
-         }
-      }
-   }
-
-   .tooltip {
-      position: absolute;
-      top: 0;
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 1.28;
-      text-align: center;
-      letter-spacing: 0.45px;
-      background-color: transparent;
-      color: var(--brand-color);
-      padding: 5px 8px;
-      opacity: 0;
-      pointer-events: none;
-   }
+   top: 380px;
+   left: 0;
+   opacity: 0;
+   z-index: 5;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.blog__follow-icon {
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   fill: rgba(38,38,38,0.9);
+}
+.blog__follow-link {
+   display: flex;
+   gap: 5px;
+   &:hover .blog__follow-img {
+      transform: scale(1.1);
+   }
+   &:hover .blog__follow-icon {
+      transform: scale(1.1);
+      transform: translate(-5px, 0px);
+   }
+}
+.blog__follow-img {
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 // input volume style
 
 .blog__volume-box {
@@ -105,11 +123,11 @@
    position: absolute;
    z-index: 3;
    top: 398px;
-    left: 0;
-    opacity: 0.5;
+   left: 92px;
+   opacity: 0.5;
    cursor: pointer;
    &:hover,
-   &focus{
+   &focus {
       opacity: 1;
    }
 }
@@ -117,7 +135,6 @@
 input[type="range"].styled-slider {
    -webkit-appearance: none;
    background-color: transparent;
-
 }
 
 /*progress support*/
